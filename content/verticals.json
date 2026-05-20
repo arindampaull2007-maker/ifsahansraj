@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "icon": "📊", "title": "Research & Analytics", "description": "Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives used by 1200+ students and professionals." },
+    { "icon": "🏢", "title": "Live Consulting Projects", "description": "Partnering with corporates like Nykaa, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements." },
+    { "icon": "🏆", "title": "Competitions", "description": "50+ national and international competition wins including CFA Research Challenge, Hult Prize, and Goldman Sachs Case Comp." },
+    { "icon": "💹", "title": "Investment Fund", "description": "Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets." },
+    { "icon": "🌍", "title": "Global Exposure", "description": "Part of the International Finance Student Association network spanning 50+ countries with cross-border research collaborations." }
+  ]
+}

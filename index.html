@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFSA Hansraj — India's Premier Undergraduate Finance Society</title>
+  <meta name="description" content="IFSA Hansraj is a student-run organization at Hansraj College driving impact through research, consulting, and capital markets. Join India's next generation of finance leaders.">
+  <meta name="keywords" content="IFSA, Hansraj College, finance, consulting, research, capital markets, student organization">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+    </a>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="projects.html">Projects</a>
+      <a href="#fund">Investment Fund</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="#contact">Contact</a>
+      <a href="#join" class="btn-outline nav-cta"><span>Join IFSA</span></a>
+    </div>
+
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About Us</a>
+  <a href="team.html">Our Team</a>
+  <a href="analytics.html">IFSA Analytics</a>
+  <a href="projects.html">Projects</a>
+  <a href="#fund" onclick="closeMobile()">Investment Fund</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="#join" class="btn-outline" onclick="closeMobile()">Join IFSA</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div id="heroGlow" class="hero-glow"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+
+  <div class="container hero-content">
+    <div class="hero-center">
+      <h1 class="hero-headline fade-up stagger-1"><span id="typewriter"></span><span class="type-cursor">|</span></h1>
+      <p class="hero-desc fade-up stagger-2">Where Finance Meets Ambition.</p>
+      <div class="hero-buttons fade-up stagger-3">
+        <a href="#whatwedo" class="btn-gold"><span>Explore Our Work</span></a>
+        <a href="#join" class="btn-outline"><span>Join IFSA</span></a>
+      </div>
+    </div>
+
+    <div class="stats-row fade-up stagger-4">
+      <div class="stat-card">
+        <div class="stat-number" data-target="1200">0</div>
+        <div class="stat-label">Community Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">Competition Wins</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-label">Live Projects</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-label">Research Papers</div>
+      </div>
+    </div>
+
+    <p class="hero-manifesto fade-up stagger-5">We don't just study finance. We live it.</p>
+  </div>
+</section>
+
+
+<!-- ========== TEAM SHOWCASE ========== -->
+<section class="team-showcase" id="team-showcase">
+  <div class="team-image-wrap fade-in">
+    <img src="images/hero.png" alt="IFSA Hansraj Team" class="team-hero-img">
+    <div class="team-image-overlay">
+      <h2>The Team Behind <span class="highlight">IFSA</span></h2>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LATEST INSIGHTS ========== -->
+<section class="section-padding" id="insights">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Latest Research</div>
+      <h2 class="section-title">Latest <span class="gold-text">Insights</span></h2>
+      <p class="section-subtitle">Institutional-grade research. Student-driven insight.</p>
+      <div class="proof-badge fade-up">100+ Published Reports</div>
+    </div>
+    <div class="insights-grid">
+      <div class="glass-card insight-card fade-up stagger-1">
+        <div class="card-img"><img src="images/insight-economics.png" alt="Economics of Losing Money"></div>
+        <div class="card-body">
+          <span class="insight-tag">Behavioral Finance</span>
+          <h3>Economics of Losing Money</h3>
+          <p class="date">March 15, 2024</p>
+        </div>
+      </div>
+      <div class="glass-card insight-card fade-up stagger-2">
+        <div class="card-img"><img src="images/insight-energy.png" alt="The Energy Transition"></div>
+        <div class="card-body">
+          <span class="insight-tag">ESG & Sustainability</span>
+          <h3>The Energy Transition: Funding the Shift</h3>
+          <p class="date">February 28, 2024</p>
+        </div>
+      </div>
+      <div class="glass-card insight-card fade-up stagger-3">
+        <div class="card-img"><img src="images/insight-gold.png" alt="India's Gold Import Paradox"></div>
+        <div class="card-body">
+          <span class="insight-tag">Macroeconomics</span>
+          <h3>Inside India's Gold Import Paradox</h3>
+          <p class="date">February 10, 2024</p>
+        </div>
+      </div>
+      <div class="glass-card insight-card fade-up stagger-4">
+        <div class="card-img"><img src="images/insight-budget.png" alt="Union Budget 2024"></div>
+        <div class="card-body">
+          <span class="insight-tag">Policy Analysis</span>
+          <h3>Union Budget 2024: Key Takeaways</h3>
+          <p class="date">January 25, 2024</p>
+        </div>
+      </div>
+    </div>
+    <div class="insights-cta fade-up">
+      <a href="#" class="btn-outline"><span>View All Insights →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WHAT WE DO ========== -->
+<section class="section-padding" id="whatwedo" style="background: var(--dark-900);">
+  <div class="container">
+    <div class="fade-up" style="text-align:center; margin-bottom: 12px;">
+      <div class="section-label" style="justify-content:center;">Our Verticals</div>
+      <h2 class="section-title">What We <span class="gold-text">Do</span></h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Five verticals. One mission.</p>
+    </div>
+    <div class="wwd-grid">
+      <div class="glass-card wwd-card fade-up stagger-1">
+        <div class="wwd-icon">📊</div>
+        <h3>Research &amp; Analytics</h3>
+        <p>Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives used by 1200+ students and professionals.</p>
+
+      </div>
+      <div class="glass-card wwd-card fade-up stagger-2">
+        <div class="wwd-icon">🏢</div>
+        <h3>Live Consulting Projects</h3>
+        <p>Partnering with corporates like Nykaa, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements.</p>
+
+      </div>
+      <div class="glass-card wwd-card fade-up stagger-3">
+        <div class="wwd-icon">🏆</div>
+        <h3>Competitions</h3>
+        <p>50+ national and international competition wins including CFA Research Challenge, Hult Prize, and Goldman Sachs Case Comp.</p>
+
+      </div>
+      <div class="glass-card wwd-card fade-up stagger-4">
+        <div class="wwd-icon">💹</div>
+        <h3>Investment Fund</h3>
+        <p>Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets.</p>
+
+      </div>
+      <div class="glass-card wwd-card fade-up stagger-5">
+        <div class="wwd-icon">🌍</div>
+        <h3>Global Exposure</h3>
+        <p>Part of the International Finance Student Association network spanning 50+ countries with cross-border research collaborations.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CLIENTS ========== -->
+<section class="section-padding" id="clients">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Trusted By Industry Leaders</div>
+      <h2 class="section-title">Collaborated With <span class="gold-text">The Best</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">8+ live consulting engagements with India's top corporations.</p>
+    </div>
+    <div class="clients-grid">
+      <div class="glass-card client-card fade-up stagger-1"><span>Nykaa</span></div>
+      <div class="glass-card client-card fade-up stagger-2"><span>HPCL</span></div>
+      <div class="glass-card client-card fade-up stagger-3"><span>REC</span></div>
+      <div class="glass-card client-card fade-up stagger-4"><span>Decode Age</span></div>
+      <div class="glass-card client-card fade-up stagger-5"><span>CX Partners</span></div>
+      <div class="glass-card client-card fade-up stagger-6"><span>NSDL</span></div>
+      <div class="glass-card client-card fade-up stagger-7"><span>Crowwd</span></div>
+      <div class="glass-card client-card fade-up stagger-8"><span>Phaad Network</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INVESTMENT FUND ========== -->
+<section class="section-padding" id="fund" style="background: var(--dark-900);">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Portfolio Management</div>
+      <h2 class="section-title">IFSA <span class="gold-text">Investment Fund</span></h2>
+      <p class="section-subtitle">Real capital. Real returns. Student-managed.</p>
+    </div>
+    <div class="fund-grid">
+      <div class="glass-card fund-panel fade-up stagger-1">
+        <h3><span class="dot"></span> Portfolio Allocation</h3>
+        <div class="donut-chart">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="46" stroke="#1a3a1a" stroke-dasharray="289" stroke-dashoffset="0"/>
+            <circle cx="60" cy="60" r="46" stroke="#C41E3A" stroke-dasharray="289" stroke-dashoffset="144.5"/>
+            <circle cx="60" cy="60" r="46" stroke="#2196F3" stroke-dasharray="289" stroke-dashoffset="202.3"/>
+            <circle cx="60" cy="60" r="46" stroke="#00C853" stroke-dasharray="289" stroke-dashoffset="231.2"/>
+            <circle cx="60" cy="60" r="46" stroke="#FF9800" stroke-dasharray="289" stroke-dashoffset="260.1"/>
+          </svg>
+          <div class="donut-center">
+            <span class="value">₹12.4L</span>
+            <span class="label">AUM</span>
+          </div>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><span class="legend-dot" style="background:#C41E3A"></span>Equities 50%</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#2196F3"></span>Fixed Income 20%</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#00C853"></span>Gold 10%</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#FF9800"></span>Alternatives 10%</div>
+          <div class="legend-item"><span class="legend-dot" style="background:#1a3a1a"></span>Cash 10%</div>
+        </div>
+      </div>
+      <div class="glass-card fund-panel fade-up stagger-2">
+        <h3><span class="dot"></span> Performance Metrics</h3>
+        <div class="metric-row"><span class="metric-label">YTD Return</span><span class="metric-value green">+18.4%</span></div>
+        <div class="metric-row"><span class="metric-label">Sharpe Ratio</span><span class="metric-value">1.82</span></div>
+        <div class="metric-row"><span class="metric-label">Max Drawdown</span><span class="metric-value red">-6.2%</span></div>
+        <div class="metric-row"><span class="metric-label">Alpha (vs Nifty 50)</span><span class="metric-value green">+4.1%</span></div>
+        <div class="metric-row"><span class="metric-label">Beta</span><span class="metric-value">0.78</span></div>
+        <div class="metric-row"><span class="metric-label">Win Rate</span><span class="metric-value green">68%</span></div>
+        <h3 style="margin-top: 24px;"><span class="dot"></span> Top Holdings</h3>
+        <div class="stock-cards">
+          <div class="stock-card">
+            <div class="ticker">HDFCBANK</div>
+            <div class="company">HDFC Bank Ltd.</div>
+            <div class="change up">▲ +12.3%</div>
+          </div>
+          <div class="stock-card">
+            <div class="ticker">RELIANCE</div>
+            <div class="company">Reliance Industries</div>
+            <div class="change up">▲ +8.7%</div>
+          </div>
+          <div class="stock-card">
+            <div class="ticker">TCS</div>
+            <div class="company">Tata Consultancy</div>
+            <div class="change down">▼ -2.1%</div>
+          </div>
+          <div class="stock-card">
+            <div class="ticker">INFY</div>
+            <div class="company">Infosys Ltd.</div>
+            <div class="change up">▲ +5.4%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="font-size:1.5rem;">
+          <div class="logo-icon" style="width:56px;height:56px;"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+        </a>
+        <p>India's most ambitious undergraduate finance society.</p>
+        <div class="footer-proof">1,200+ Members · 50+ Wins · 100+ Papers · 30+ Projects</div>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="projects.html">Projects</a>
+        <a href="#fund">Investment Fund</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="team.html">Our Team</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#">Research Reports</a>
+        <a href="#">Case Studies</a>
+        <a href="#">Market Commentary</a>
+        <a href="#">Learning Hub</a>
+        <a href="#">Events Calendar</a>
+      </div>
+      <div class="footer-col" id="join">
+        <h4>Stay Updated</h4>
+        <p style="font-size:0.85rem;color:var(--dark-300);margin-bottom:12px;">Subscribe to our weekly market digest and research updates.</p>
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <div class="newsletter-input">
+            <input type="email" name="email" placeholder="your@email.com" aria-label="Email for newsletter" required>
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 IFSA Hansraj. All rights reserved.</p>
+      <p>Hansraj College, University of Delhi</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script src="content-loader.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

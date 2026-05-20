@@ -1,0 +1,69 @@
+{
+  "stats": [
+    { "num": "50+", "label": "Competition Wins" },
+    { "num": "6", "label": "Years of Excellence" },
+    { "num": "20+", "label": "Institutions Competed At" },
+    { "num": "100+", "label": "Participants" }
+  ],
+  "sections": [
+    {
+      "title": "🏆 Flagship Wins",
+      "highlight": true,
+      "items": [
+        { "name": "EY CAFTA", "tag": "National Runner Up", "host": "", "winners": "Kabir Khanna, Satyam Agarwalla" },
+        { "name": "Global Case Competition at Harvard 2022", "tag": "Global Competition", "host": "", "winners": "Aakash Kataria, Shrusti Singh, Aksam Ahmed, Mahir Bhandari, Nikki Arora" },
+        { "name": "Global Case Competition at Harvard 2021", "tag": "Global Competition", "host": "", "winners": "Govind Gupta, Ishan Kashyap Hazarika, Jivyansh Mittal, Mahima Yadav, Sandesh Dholakia" },
+        { "name": "The World Bank Case Study Competition", "tag": "International", "host": "The World Bank & FSSAI", "winners": "Govind Gupta, Ishan Kashyap Hazarika, Sandesh Dholakia" },
+        { "name": "HSBC/HKU Business Case Program (India)", "tag": "National", "host": "", "winners": "Svasti Pant" },
+        { "name": "Case-O-Mania — IIM Lucknow", "tag": "IIM Competition", "host": "", "winners": "Bhavi Khanna, Vanshika Soni, Jiya Wadhwa" }
+      ]
+    },
+    {
+      "title": "Recent Wins (2024-25)",
+      "highlight": false,
+      "items": [
+        { "name": "FinCon Mania", "tag": "", "host": "IIT Roorkee × SRCC × Ditto Insurance", "winners": "Arnav Sachdeva" },
+        { "name": "Invicta", "tag": "", "host": "SSCBS", "winners": "Ansh Batra, Anushka Sharma, Sheilja Bansal" },
+        { "name": "Ashoka Behavioral Case", "tag": "", "host": "Ashoka University", "winners": "Aaditya Kothari" },
+        { "name": "CISE Viksit Bharat Innovation Challenge", "tag": "", "host": "Kirorimal College, DU", "winners": "Aaditya Kothari" },
+        { "name": "Green Gambit", "tag": "", "host": "LSR", "winners": "Nischal Garg, Avi Chadha" },
+        { "name": "Venturex", "tag": "", "host": "SSCBS", "winners": "Hiyaa Bhardwaj" },
+        { "name": "Ops-strategia", "tag": "", "host": "BITS Pilani", "winners": "Khushi Satwani" },
+        { "name": "Insignia", "tag": "", "host": "St. Xavier's Kolkata", "winners": "Khushi Satwani" },
+        { "name": "Mergeverse", "tag": "", "host": "Ramjas, DU", "winners": "Aaditya Kothari" },
+        { "name": "Entrepreneurial Questant", "tag": "", "host": "St. Xavier's Kolkata", "winners": "Aaditya Kothari, Navya Gupta" },
+        { "name": "The Return Journey", "tag": "", "host": "IIM Sirmaur", "winners": "Khushi Satwani" },
+        { "name": "All About Analysis", "tag": "", "host": "NMIMS", "winners": "Ansh Batra" },
+        { "name": "Samvridhhi", "tag": "", "host": "Sri Venkateswara College", "winners": "Anushka Sharma" },
+        { "name": "Pitch-it-Perfect", "tag": "", "host": "IIM Bangalore", "winners": "Avi Chadha, Navya Gupta, Anshay Gulati" },
+        { "name": "Vices Crices", "tag": "", "host": "LSR", "winners": "Shresth Gupta" },
+        { "name": "Case-O-Mania", "tag": "", "host": "IIT Kanpur", "winners": "Ansh Batra" }
+      ]
+    },
+    {
+      "title": "Earlier Wins (2023 & Before)",
+      "highlight": false,
+      "items": [
+        { "name": "EY CAFTA – Chapter 2", "tag": "", "host": "", "winners": "Ekansh Hinger" },
+        { "name": "IMA Student Case Competition", "tag": "", "host": "IMA India", "winners": "Ayush Jain, Dhruv, Krishna Golyan, Mahi Rawat, Suhani Jain" },
+        { "name": "AIBC HSBC M&A", "tag": "", "host": "", "winners": "Mahir Bhandari, Satyam Agarwalla" },
+        { "name": "Case De Perte — DRC", "tag": "", "host": "", "winners": "Krishna Golyan" },
+        { "name": "Blueprint", "tag": "", "host": "SSCBS", "winners": "Krishna Golyan" },
+        { "name": "Social Synergy", "tag": "", "host": "LSR", "winners": "Ekansh Hinger, Punya Malhotra, Satyam Agarwalla" },
+        { "name": "Minductor", "tag": "", "host": "SRCC", "winners": "Nandini Nagpal, Sambhav Aggarwal" },
+        { "name": "Case Conundrum", "tag": "", "host": "DSE", "winners": "Aryan, Ayush Jain, Suhani Jain" },
+        { "name": "SRCC The Next Big Thing", "tag": "", "host": "", "winners": "Krishna Golyan" },
+        { "name": "On-campus Hult Prize Challenge", "tag": "", "host": "", "winners": "Krishna Golyan" },
+        { "name": "Start-up Blitz — IIM Calcutta", "tag": "", "host": "", "winners": "Avi Chadha, Keshavv Sarda" },
+        { "name": "Case-ino Royale", "tag": "", "host": "SSCBS", "winners": "Saksham Bansal" },
+        { "name": "EDNITA", "tag": "", "host": "", "winners": "Aakash Kataria" },
+        { "name": "Think Tank 2.0", "tag": "", "host": "ICAI", "winners": "Svasti Pant" },
+        { "name": "Consilium", "tag": "", "host": "SRCC", "winners": "Shrusti Singh, Svasti Pant" },
+        { "name": "180DC NITK Case Competition", "tag": "", "host": "NIT-K", "winners": "Simran Swain, Satyam Agarwalla, Kabir Khanna" },
+        { "name": "Indian Road Safety Case Competition", "tag": "", "host": "Ministry of Road and Transport", "winners": "Govind Gupta, Ishan Kashyap Hazarika, Sandesh Dholakia" },
+        { "name": "Shri Ram Macroeconomia", "tag": "", "host": "The World Bank", "winners": "Aakash Kataria, Yuganksha Bhasin" },
+        { "name": "Insignia", "tag": "", "host": "St. Xavier's College, Kolkata", "winners": "Shrusti Singh, Svasti Pant, Tanisha Karanwal + 3 others" }
+      ]
+    }
+  ]
+}

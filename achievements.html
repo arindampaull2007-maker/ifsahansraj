@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements — Competition Wins & Milestones | IFSA Hansraj</title>
+  <meta name="description" content="IFSA Hansraj's proven track record — 50+ competition wins at Harvard, IIMs, IITs, EY, and the World Bank. See who represented us.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#fund">Investment Fund</a>
+      <a href="achievements.html" class="active">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#join" class="btn-outline nav-cta"><span>Join IFSA</span></a>
+    </div>
+
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#hero" onclick="closeMobile()">Home</a>
+  <a href="index.html#about" onclick="closeMobile()">About Us</a>
+  <a href="team.html">Our Team</a>
+  <a href="analytics.html">Analytics</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html#fund" onclick="closeMobile()">Investment Fund</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="index.html#join" class="btn-outline" onclick="closeMobile()">Join IFSA</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="page-hero-label">Track Record</div>
+    <h1 class="page-hero-title">Proven <span class="gold-text">Impact</span></h1>
+    <p class="page-hero-desc">50+ competition wins across national and international platforms — from Harvard to IIMs to the World Bank.</p>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section-padding" style="padding-top:60px;">
+  <div class="container">
+    <div class="page-stats">
+      <div class="glass-card page-stat fade-up stagger-1">
+        <div class="num">50+</div>
+        <div class="label">Competition Wins</div>
+      </div>
+      <div class="glass-card page-stat fade-up stagger-2">
+        <div class="num">6</div>
+        <div class="label">Years of Excellence</div>
+      </div>
+      <div class="glass-card page-stat fade-up stagger-3">
+        <div class="num">20+</div>
+        <div class="label">Institutions Competed At</div>
+      </div>
+      <div class="glass-card page-stat fade-up stagger-4">
+        <div class="num">100+</div>
+        <div class="label">Participants</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background: var(--dark-900);">
+  <div class="container">
+    <div id="achievements-dynamic"></div>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="container">
+    <p>© 2025 IFSA Hansraj. All rights reserved.</p>
+    <p>Hansraj College, University of Delhi</p>
+    <p style="margin-top: 12px;"><a href="index.html">← Back to Home</a></p>
+  </div>
+</footer>
+
+<script src="content-loader.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

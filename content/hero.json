@@ -1,0 +1,10 @@
+{
+  "subtitle": "Where Finance Meets Ambition.",
+  "manifesto": "We don't just study finance. We live it.",
+  "stats": [
+    { "number": "1200", "label": "Community Members" },
+    { "number": "50", "label": "Competition Wins" },
+    { "number": "30", "label": "Live Projects" },
+    { "number": "100", "label": "Research Papers" }
+  ]
+}

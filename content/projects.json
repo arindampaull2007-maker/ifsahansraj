@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "icon": "🏢",
+      "category": "Venture Capital",
+      "name": "FAAD Network",
+      "desc1": "FAAD Network is a Venture Capital Firm which invests in early stage startups across various sectors & geographies.",
+      "desc2": "At FAAD Capital, our primary focus was on identifying and evaluating promising startups. We meticulously evaluated more than 100+ startups across various sectors and industries, building a comprehensive database that analysed their potential for growth and innovation.",
+      "desc3": "We actively engaged with incubators to foster collaboration and assisted startups in securing funding by connecting them with our investor network. By leveraging our expertise, we helped them launch their accelerator program.",
+      "tags": ["100+ Startups Evaluated", "Accelerator Launch", "Incubator Partnerships"]
+    },
+    {
+      "icon": "🎓",
+      "category": "EdTech Strategy",
+      "name": "Being Ambitious",
+      "desc1": "A Harvard and Forbes backed startup looking to enter the EdTech domain — building a teaching and learning platform for entrepreneurs looking to get into the D2C market.",
+      "desc2": "We researched the EdTech ecosystem focusing on D2C startups to perform competitive analysis and comparative analysis. Our team built a Go-To-Market strategy, contributed to syllabus development by researching innovations, and supported website development through comparative findings.",
+      "desc3": "",
+      "tags": ["Harvard & Forbes Backed", "Go-To-Market Strategy", "D2C Market Research"]
+    },
+    {
+      "icon": "📊",
+      "category": "Startup Advisory",
+      "name": "Red Herring Ventures",
+      "desc1": "A pro-bono startup advisory initiative integrated with a network of investors, working with early-stage startups.",
+      "desc2": "We worked with two startups — Famyo and The Better Shop — assisting in crafting concise one-pager investor pitches. Our focus was on capturing each startup's vision, highlighting key value propositions, and presenting compelling financial projections and market insights.",
+      "desc3": "",
+      "tags": ["Investor Pitch Design", "Famyo & The Better Shop", "Pro-Bono Advisory"]
+    },
+    {
+      "icon": "🌍",
+      "category": "Investment Advisory",
+      "name": "LETUS International",
+      "desc1": "An NRI investor group with ₹5 Cr capital, comprising 99 members managed by 11 directors who contribute ₹25 Lakhs monthly. They aim to expand investments to ₹15 Cr as a dedicated retirement plan for NRI investors.",
+      "desc2": "IFSA collaborated on three projects: providing a report on optimal business registration forms for tax benefits and FDI policy, a comprehensive analysis projecting real estate market growth across metropolitan cities, and a comparative investment growth report.",
+      "desc3": "",
+      "tags": ["₹5 Cr AUM", "Business Registration", "Real Estate Analysis"]
+    },
+    {
+      "icon": "⚙️",
+      "category": "Economic Modeling",
+      "name": "Infinite-Sum Modeling Inc. (ISM)",
+      "desc1": "A leading economic firm providing advice to government, NGOs, and companies.",
+      "desc2": "We prepared an economic model to assess costs of metal weathering and threats to national infrastructure. Our team undertook cost-benefit analysis using the Hoar method, Engineering Economy method, and Present Value method, suggesting a Corrosion Management System.",
+      "desc3": "In the next leg, we compiled research on climate change impacts on tourism and challenges in India's toy industry, gaining expertise in economic modeling and analogies of the Indian economy.",
+      "tags": ["Economic Modeling", "Cost-Benefit Analysis", "Climate Research"]
+    }
+  ]
+}

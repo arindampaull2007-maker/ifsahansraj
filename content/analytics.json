@@ -1,0 +1,20 @@
+{
+  "featured": {
+    "tag": "FEATURED RESEARCH",
+    "title": "GEOPOLITICS OF\nENERGY TRANSITION",
+    "description": "How global power dynamics, resource distribution, and policy strategies are being reshaped in a low-carbon world.",
+    "author": "IFSA Analytics",
+    "edition": "Special Edition",
+    "image": "images/featured-hero.png",
+    "pdf": "https://www.ifsahansraj.com/_files/ugd/d90c64_258d2842cfd24560ac0132ee3f73d0e9.pdf"
+  },
+  "articles": [
+    { "icon": "🌍", "tag": "SPECIAL EDITION", "tagType": "", "title": "Geopolitics of Energy Transition", "meta": "By IFSA Analytics · Special Edition", "badge": "FEATURED", "image": "", "pdf": "https://www.ifsahansraj.com/_files/ugd/d90c64_258d2842cfd24560ac0132ee3f73d0e9.pdf" },
+    { "icon": "🇮🇳", "tag": "SPECIAL EDITION", "tagType": "", "title": "India Next: Charting The Growth Story", "meta": "By IFSA Analytics · Special Edition", "badge": "", "image": "", "pdf": "https://www.ifsahansraj.com/_files/ugd/d90c64_906826fa138f4d17a8f2049a22256d02.pdf?index=true" },
+    { "icon": "🏅", "tag": "COLLABORATIVE · IIT KHARAGPUR", "tagType": "collab", "title": "The Economics of the Olympics", "meta": "By IFSA Hansraj × IFSA IIT KGP", "badge": "", "image": "", "pdf": "https://www.ifsahansraj.com/_files/ugd/d90c64_0808c8388bfa4f179c18949f5f70e815.pdf" },
+    { "icon": "💸", "tag": "COLLABORATIVE · SVC", "tagType": "collab", "title": "The Economics of Losing Money", "meta": "By IFSA Hansraj × IFSA SVC", "badge": "", "image": "", "pdf": "https://www.ifsahansraj.com/_files/ugd/d90c64_f27eb394c42a44aeb6140145c3512866.pdf" },
+    { "icon": "🛡️", "tag": "BLOG POST", "tagType": "blog", "title": "Impact of Tariff on Domestic Defence", "meta": "Policy Analysis · 2025", "badge": "", "image": "", "pdf": "" },
+    { "icon": "🎮", "tag": "BLOG POST", "tagType": "blog", "title": "Fantasy Gaming in India: The Game Beyond the Game", "meta": "Industry Analysis · 2025", "badge": "", "image": "", "pdf": "" },
+    { "icon": "🏠", "tag": "BLOG POST", "tagType": "blog", "title": "When Risk Rewrites the Map: Disasters & Property Markets", "meta": "Macroeconomics · 2025", "badge": "", "image": "", "pdf": "" }
+  ]
+}

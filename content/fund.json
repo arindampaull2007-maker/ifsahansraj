@@ -1,0 +1,11 @@
+{
+  "aum": "₹12.4L",
+  "metrics": [
+    { "label": "YTD Return", "value": "+18.4%", "color": "green" },
+    { "label": "Sharpe Ratio", "value": "1.82", "color": "" },
+    { "label": "Max Drawdown", "value": "-6.2%", "color": "red" },
+    { "label": "Alpha (vs Nifty 50)", "value": "+4.1%", "color": "green" },
+    { "label": "Beta", "value": "0.78", "color": "" },
+    { "label": "Win Rate", "value": "68%", "color": "green" }
+  ]
+}

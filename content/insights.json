@@ -1,0 +1,9 @@
+{
+  "sectionTitle": "Latest <span class=\"gold-text\">Insights</span>",
+  "cards": [
+    { "tag": "Behavioral Finance", "title": "Economics of Losing Money", "date": "March 15, 2024", "image": "images/insight-economics.png" },
+    { "tag": "ESG & Sustainability", "title": "The Energy Transition: Funding the Shift", "date": "February 28, 2024", "image": "images/insight-energy.png" },
+    { "tag": "Macroeconomics", "title": "Inside India's Gold Import Paradox", "date": "February 10, 2024", "image": "images/insight-gold.png" },
+    { "tag": "Policy Analysis", "title": "Union Budget 2024: Key Takeaways", "date": "January 25, 2024", "image": "images/insight-budget.png" }
+  ]
+}

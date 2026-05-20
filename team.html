@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — Leadership & Legacy | IFSA Hansraj</title>
+  <meta name="description" content="Meet the team behind IFSA Hansraj — from the current Core Committee to our founding board and faculty convenors.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="team.html" class="active">Our Team</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#fund">Investment Fund</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#join" class="btn-outline nav-cta"><span>Join IFSA</span></a>
+    </div>
+
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#hero" onclick="closeMobile()">Home</a>
+  <a href="index.html#about" onclick="closeMobile()">About Us</a>
+  <a href="team.html">Our Team</a>
+  <a href="analytics.html">Analytics</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html#fund" onclick="closeMobile()">Investment Fund</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="index.html#join" class="btn-outline" onclick="closeMobile()">Join IFSA</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="page-hero-label">Leadership</div>
+    <h1 class="page-hero-title">Our <span class="gold-text">Team</span></h1>
+    <p class="page-hero-desc">The minds behind the mission. From our current core committee to the founding board — meet the people who built IFSA.</p>
+  </div>
+</section>
+
+<!-- Team Photo -->
+<section class="team-showcase">
+  <div class="team-image-wrap fade-in">
+    <img src="images/hero.png" alt="IFSA Hansraj Team" class="team-hero-img">
+    <div class="team-image-overlay">
+      <h2>The Team Behind <span class="highlight">IFSA</span></h2>
+    </div>
+  </div>
+</section>
+
+<!-- Dynamic team content loaded from content/team.json -->
+<div id="team-dynamic"></div>
+
+<!-- Convenors -->
+<section class="section-padding" id="convenors">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Faculty Advisors</div>
+      <h2 class="section-title"><span class="gold-text">Convenors</span></h2>
+    </div>
+    <div class="convenors-grid" id="convenors-dynamic">
+    </div>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="container">
+    <p>© 2025 IFSA Hansraj. All rights reserved.</p>
+    <p>Hansraj College, University of Delhi</p>
+    <p style="margin-top: 12px;"><a href="index.html">← Back to Home</a></p>
+  </div>
+</footer>
+
+<script src="content-loader.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

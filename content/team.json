@@ -1,0 +1,115 @@
+{
+  "years": [
+    {
+      "year": "2025-26",
+      "bgStyle": "default",
+      "categories": [
+        {
+          "name": "Core Committee",
+          "members": [
+            { "name": "Aaditya Kothari", "role": "President", "photo": "" },
+            { "name": "Arnav Sachdeva", "role": "Vice President", "photo": "" },
+            { "name": "Vanshika Soni", "role": "Vice President", "photo": "" },
+            { "name": "Jiya Wadhwa", "role": "General Secretary", "photo": "" }
+          ]
+        },
+        {
+          "name": "Executive Board",
+          "members": [
+            { "name": "Ansh Batra", "role": "Executive Board", "photo": "" },
+            { "name": "Bhavi Khanna", "role": "Executive Board", "photo": "" },
+            { "name": "Khushi Satwani", "role": "Executive Board", "photo": "" },
+            { "name": "Navya Gupta", "role": "Executive Board", "photo": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2024-25",
+      "bgStyle": "dark",
+      "categories": [
+        {
+          "name": "Core Committee",
+          "members": [
+            { "name": "Saksham Bansal", "role": "President", "photo": "" },
+            { "name": "Aryan Kumar", "role": "Vice President", "photo": "" },
+            { "name": "Ayush Jain", "role": "Vice President", "photo": "" }
+          ]
+        },
+        {
+          "name": "Executive Board",
+          "members": [
+            { "name": "Soham Swami", "role": "Executive Board", "photo": "" },
+            { "name": "Mahi Rawat", "role": "Executive Board", "photo": "" },
+            { "name": "Daksh Ahuja", "role": "Executive Board", "photo": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2023-24",
+      "bgStyle": "default",
+      "categories": [
+        {
+          "name": "Leadership",
+          "members": [
+            { "name": "Krishna Golyan", "role": "President", "photo": "" },
+            { "name": "Nysna Khurana", "role": "Vice President", "photo": "" },
+            { "name": "Ayush Jain", "role": "Director of Finance", "photo": "" },
+            { "name": "Mahi Rawat", "role": "Director of Outreach", "photo": "" },
+            { "name": "Saksham Bansal", "role": "Director of Consulting", "photo": "" },
+            { "name": "Suhani Jain", "role": "Director of Operations", "photo": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2022-23",
+      "bgStyle": "dark",
+      "categories": [
+        {
+          "name": "Leadership",
+          "members": [
+            { "name": "Satyam Agarwalla", "role": "President", "photo": "" },
+            { "name": "Simran Swain", "role": "Vice-President", "photo": "" },
+            { "name": "Pranjal Aggarwal", "role": "Dir. of Economics & Finance", "photo": "" },
+            { "name": "Mahir Bhandari", "role": "Director of Operations", "photo": "" },
+            { "name": "Sharvi Sharma", "role": "Director of Outreach", "photo": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2021-22",
+      "bgStyle": "default",
+      "categories": [
+        {
+          "name": "Leadership",
+          "members": [
+            { "name": "Aakash Kataria", "role": "President", "photo": "" },
+            { "name": "Svasti Pant", "role": "Vice-President", "photo": "" },
+            { "name": "Shrusti Singh", "role": "Dir. of Econ. & Statistics", "photo": "" },
+            { "name": "Aditya Vikram Singh", "role": "Director of Finance", "photo": "" },
+            { "name": "Shivansh Chawla", "role": "Director of Outreach", "photo": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2020-21",
+      "bgStyle": "dark",
+      "categories": [
+        {
+          "name": "Founding Board",
+          "members": [
+            { "name": "Sandesh Dholakia", "role": "President", "photo": "" },
+            { "name": "Govind Gupta", "role": "Vice-President", "photo": "" },
+            { "name": "Ishan Kashyap Hazarika", "role": "Dir. of Econ. & Statistics", "photo": "" },
+            { "name": "Dhruv Tuli", "role": "Director of Finance", "photo": "" },
+            { "name": "Rahul Nandwani", "role": "Director of Outreach", "photo": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}

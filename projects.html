@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Live Consulting Engagements | IFSA Hansraj</title>
+  <meta name="description" content="IFSA Hansraj's live consulting projects — from FAAD Network VC to ISM economic modeling. Real-world impact by student teams.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html#fund">Investment Fund</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#join" class="btn-outline nav-cta"><span>Join IFSA</span></a>
+    </div>
+
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#hero" onclick="closeMobile()">Home</a>
+  <a href="index.html#about" onclick="closeMobile()">About Us</a>
+  <a href="team.html">Our Team</a>
+  <a href="analytics.html">Analytics</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html#fund" onclick="closeMobile()">Investment Fund</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="index.html#join" class="btn-outline" onclick="closeMobile()">Join IFSA</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <div class="page-hero-label">Live Consulting</div>
+    <h1 class="page-hero-title">Our <span class="gold-text">Projects</span></h1>
+    <p class="page-hero-desc">Real-world consulting engagements with corporates, VCs, and international organizations — delivering institutional-grade work.</p>
+  </div>
+</section>
+
+<section class="section-padding" id="projects-list">
+  <div class="container">
+    <div class="projects-grid" id="projects-dynamic">
+    </div>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="container">
+    <p>© 2025 IFSA Hansraj. All rights reserved.</p>
+    <p>Hansraj College, University of Delhi</p>
+    <p style="margin-top: 12px;"><a href="index.html">← Back to Home</a></p>
+  </div>
+</footer>
+
+<script src="content-loader.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

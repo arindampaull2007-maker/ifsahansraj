@@ -1,0 +1,204 @@
+backend:
+  name: github
+  repo: owner/ifsa-hansraj
+  branch: main
+
+media_folder: "uploads/images"
+public_folder: "/uploads/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Site Metadata"
+        file: "content/site.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "text" }
+
+      - name: "hero"
+        label: "Hero Section"
+        file: "content/hero.json"
+        fields:
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Manifesto Quote", name: "manifesto", widget: "string" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+      - name: "insights"
+        label: "Latest Insights"
+        file: "content/insights.json"
+        fields:
+          - { label: "Section Title (HTML)", name: "sectionTitle", widget: "string" }
+          - label: "Cards"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+
+      - name: "verticals"
+        label: "What We Do"
+        file: "content/verticals.json"
+        fields:
+          - label: "Verticals"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - name: "clients"
+        label: "Clients & Partners"
+        file: "content/clients.json"
+        fields:
+          - label: "Client Names"
+            name: "items"
+            widget: "list"
+            field: { label: "Name", name: "name", widget: "string" }
+
+      - name: "fund"
+        label: "Investment Fund"
+        file: "content/fund.json"
+        fields:
+          - { label: "AUM Display", name: "aum", widget: "string" }
+          - label: "Performance Metrics"
+            name: "metrics"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Color (green/red/empty)", name: "color", widget: "string", required: false }
+
+      - name: "footer"
+        label: "Footer"
+        file: "content/footer.json"
+        fields:
+          - { label: "Brand Description", name: "brand", widget: "string" }
+          - { label: "Proof Strip", name: "proof", widget: "string" }
+
+  - name: "team"
+    label: "Team"
+    files:
+      - name: "team_data"
+        label: "Team Members"
+        file: "content/team.json"
+        fields:
+          - label: "Years"
+            name: "years"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Background Style", name: "bgStyle", widget: "select", options: ["default", "dark"], default: "default", required: false }
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                fields:
+                  - { label: "Category Name", name: "name", widget: "string" }
+                  - label: "Members"
+                    name: "members"
+                    widget: "list"
+                    fields:
+                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Role", name: "role", widget: "string" }
+                      - { label: "Photo", name: "photo", widget: "image", required: false }
+
+      - name: "convenors"
+        label: "Faculty Convenors"
+        file: "content/convenors.json"
+        fields:
+          - label: "Convenors"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Department", name: "department", widget: "string" }
+
+  - name: "achievements"
+    label: "Achievements"
+    files:
+      - name: "achievements_data"
+        label: "All Achievements"
+        file: "content/achievements.json"
+        fields:
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Highlight Cards?", name: "highlight", widget: "boolean", default: false }
+              - label: "Achievements"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Competition Name", name: "name", widget: "string" }
+                  - { label: "Tag/Category", name: "tag", widget: "string", required: false }
+                  - { label: "Host Institution", name: "host", widget: "string", required: false }
+                  - { label: "Winners", name: "winners", widget: "string" }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects_data"
+        label: "All Projects"
+        file: "content/projects.json"
+        fields:
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Description (paragraph 1)", name: "desc1", widget: "text" }
+              - { label: "Description (paragraph 2)", name: "desc2", widget: "text", required: false }
+              - { label: "Description (paragraph 3)", name: "desc3", widget: "text", required: false }
+              - label: "Highlight Tags"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+
+  - name: "analytics"
+    label: "Analytics / Research"
+    files:
+      - name: "analytics_data"
+        label: "Analytics Page Content"
+        file: "content/analytics.json"
+        fields:
+          - label: "Featured Article"
+            name: "featured"
+            widget: "object"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Edition", name: "edition", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image", required: false }
+              - { label: "PDF URL/Path", name: "pdf", widget: "string", required: false }
+          - label: "Research Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Tag Type (empty/collab/blog)", name: "tagType", widget: "select", options: ["", "collab", "blog"], default: "" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Meta Info", name: "meta", widget: "string" }
+              - { label: "Badge (e.g. FEATURED)", name: "badge", widget: "string", required: false }
+              - { label: "Thumbnail Image", name: "image", widget: "image", required: false }
+              - { label: "PDF URL/Path", name: "pdf", widget: "string", required: false }

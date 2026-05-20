@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFSA Analytics — Financial Terminal | IFSA Hansraj</title>
+  <meta name="description" content="IFSA Analytics — institutional-grade research, market data, and financial analysis by IFSA Hansraj.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="analytics-terminal.css">
+<style>
+/* PDF Reader Modal */
+.pdf-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:9999;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.pdf-modal-overlay.active{display:flex;opacity:1}
+.pdf-modal{width:90vw;max-width:1100px;height:88vh;background:#111;border:1px solid rgba(255,255,255,.1);border-radius:16px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 60px rgba(196,30,58,.08)}
+.pdf-modal-header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);flex-shrink:0}
+.pdf-modal-title{font-size:.9rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:10px}
+.pdf-modal-title .pdf-icon{width:32px;height:32px;border-radius:6px;background:rgba(196,30,58,.15);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.pdf-modal-actions{display:flex;gap:8px;align-items:center}
+.pdf-modal-actions a,.pdf-modal-actions button{padding:7px 16px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none}
+.pdf-btn-download{background:rgba(196,30,58,.12);color:#C41E3A;border:1px solid rgba(196,30,58,.25)}
+.pdf-btn-download:hover{background:rgba(196,30,58,.2)}
+.pdf-btn-newtab{background:rgba(255,255,255,.06);color:#aaa;border:1px solid rgba(255,255,255,.1)}
+.pdf-btn-newtab:hover{color:#fff;border-color:rgba(255,255,255,.2)}
+.pdf-btn-close{background:none;border:none;color:#666;font-size:1.3rem;cursor:pointer;padding:4px 8px;transition:color .2s}
+.pdf-btn-close:hover{color:#fff}
+.pdf-modal-body{flex:1;position:relative;overflow:hidden}
+.pdf-modal-body iframe{width:100%;height:100%;border:none;background:#1a1a1a}
+.pdf-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#666;font-size:.85rem;pointer-events:none}
+/* Article image thumbnails */
+.ri-thumb-img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex-shrink:0}
+.ri-pdf-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;font-size:.55rem;font-weight:700;letter-spacing:1px;background:rgba(196,30,58,.1);color:#C41E3A;border:1px solid rgba(196,30,58,.15);cursor:pointer;margin-left:8px}
+.ri-pdf-badge:hover{background:rgba(196,30,58,.2)}
+/* Featured image from data */
+.featured-image img{width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(.8);transition:transform .5s}
+.featured-hero:hover .featured-image img{transform:scale(1.05)}
+
+@media(max-width:768px){
+  .pdf-modal{width:96vw;height:92vh;border-radius:10px}
+  .pdf-modal-header{padding:12px 16px}
+  .pdf-modal-actions a,.pdf-modal-actions button{padding:5px 10px;font-size:.7rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><img src="images/ifsa-logo.png" alt="IFSA Logo"></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="team.html">Our Team</a>
+      <a href="analytics.html" class="active">Analytics</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#fund">Investment Fund</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#join" class="btn-outline nav-cta"><span>Join IFSA</span></a>
+    </div>
+
+    <div class="mobile-toggle" id="mobileToggle" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#hero" onclick="closeMobile()">Home</a>
+  <a href="index.html#about" onclick="closeMobile()">About Us</a>
+  <a href="team.html">Our Team</a>
+  <a href="analytics.html">Analytics</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html#fund" onclick="closeMobile()">Investment Fund</a>
+  <a href="achievements.html">Achievements</a>
+  <a href="index.html#contact" onclick="closeMobile()">Contact Us</a>
+  <a href="index.html#join" class="btn-outline" onclick="closeMobile()">Join IFSA</a>
+</div>
+
+<!-- ========== FEATURED RESEARCH ========== -->
+<section class="featured-section" style="padding-top:100px;">
+  <div class="container">
+    <div class="featured-hero" id="featuredHero">
+      <canvas id="featuredCanvas"></canvas>
+      <div class="featured-overlay"></div>
+      <div class="featured-content">
+        <div class="featured-tag" id="ft_tag">FEATURED RESEARCH</div>
+        <h2 id="ft_title">GEOPOLITICS OF<br>ENERGY TRANSITION</h2>
+        <p id="ft_desc">How global power dynamics, resource distribution, and policy strategies are being reshaped in a low-carbon world.</p>
+        <div class="featured-meta">
+          <span class="featured-author" id="ft_author">IFSA Analytics</span>
+          <span id="ft_edition">Special Edition</span>
+          <a href="#" id="ft_read" class="featured-read" onclick="openPdfReader(this.dataset.pdf, this.dataset.title); return false;">Read Report →</a>
+        </div>
+      </div>
+      <div class="featured-image">
+        <img id="ft_image" src="images/featured-hero.png" alt="Featured Research">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EXPLORE RESEARCH ========== -->
+<section class="explore-section">
+  <div class="container">
+    <div class="explore-header">
+      <div class="section-label" style="justify-content:flex-start;">EXPLORE RESEARCH</div>
+    </div>
+    <div class="explore-grid">
+      <div class="explore-card" data-tilt>
+        <div class="explore-card-img"><img src="images/cat-macro.png" alt="Macro"><div class="explore-card-overlay"></div></div>
+        <div class="explore-card-body">
+          <h3>MACRO</h3>
+          <p>Global economy, monetary policy, fiscal trends.</p>
+          <span class="explore-arrow">→</span>
+        </div>
+      </div>
+      <div class="explore-card" data-tilt>
+        <div class="explore-card-img"><img src="images/cat-markets.png" alt="Markets"><div class="explore-card-overlay"></div></div>
+        <div class="explore-card-body">
+          <h3>MARKETS</h3>
+          <p>Equity markets, credit, commodities, and more.</p>
+          <span class="explore-arrow">→</span>
+        </div>
+      </div>
+      <div class="explore-card" data-tilt>
+        <div class="explore-card-img"><img src="images/cat-startups.png" alt="Startups"><div class="explore-card-overlay"></div></div>
+        <div class="explore-card-body">
+          <h3>STARTUPS</h3>
+          <p>Funding trends, unicorns, exits, ecosystem.</p>
+          <span class="explore-arrow">→</span>
+        </div>
+      </div>
+      <div class="explore-card" data-tilt>
+        <div class="explore-card-img"><img src="images/cat-geopolitics.png" alt="Geopolitics"><div class="explore-card-overlay"></div></div>
+        <div class="explore-card-body">
+          <h3>GEOPOLITICS</h3>
+          <p>Global conflicts, policy shifts, geoeconomic impact.</p>
+          <span class="explore-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LATEST RESEARCH ========== -->
+<section class="research-section">
+  <div class="container">
+    <div class="research-main" style="max-width:100%;">
+      <div class="research-top">
+        <h3>LATEST RESEARCH</h3>
+        <a href="https://www.ifsahansraj.com/blog" target="_blank" class="view-all">View all →</a>
+      </div>
+      <div class="research-tabs">
+        <button class="rtab active">All</button>
+        <button class="rtab">Special Editions</button>
+        <button class="rtab">Collaborative</button>
+        <button class="rtab">Blog Posts</button>
+      </div>
+      <!-- Articles rendered dynamically -->
+      <div class="research-list" id="researchList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PDF READER MODAL ========== -->
+<div class="pdf-modal-overlay" id="pdfOverlay" onclick="if(event.target===this)closePdfReader()">
+  <div class="pdf-modal">
+    <div class="pdf-modal-header">
+      <div class="pdf-modal-title">
+        <div class="pdf-icon">📄</div>
+        <span id="pdfTitle">Document</span>
+      </div>
+      <div class="pdf-modal-actions">
+        <a id="pdfDownload" href="#" target="_blank" class="pdf-btn-download" download>⬇ Download</a>
+        <a id="pdfNewTab" href="#" target="_blank" class="pdf-btn-newtab">↗ New Tab</a>
+        <button class="pdf-btn-close" onclick="closePdfReader()">✕</button>
+      </div>
+    </div>
+    <div class="pdf-modal-body">
+      <div class="pdf-loading" id="pdfLoading">Loading PDF…</div>
+      <iframe id="pdfFrame" src="" title="PDF Reader"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="page-footer">
+  <div class="container">
+    <p>© 2025 IFSA Hansraj. All rights reserved.</p>
+    <p>Hansraj College, University of Delhi</p>
+    <p style="margin-top: 12px;"><a href="index.html">← Back to Home</a></p>
+  </div>
+</footer>
+
+<script src="content-loader.js"></script>
+<script src="app.js"></script>
+<script src="analytics-terminal.js"></script>
+
+<script>
+// ========== PDF READER ==========
+function openPdfReader(url, title) {
+  if (!url) return;
+  var overlay = document.getElementById('pdfOverlay');
+  var frame = document.getElementById('pdfFrame');
+  var loading = document.getElementById('pdfLoading');
+  document.getElementById('pdfTitle').textContent = title || 'Document';
+  document.getElementById('pdfDownload').href = url;
+  document.getElementById('pdfNewTab').href = url;
+  loading.style.display = 'flex';
+  frame.src = '';
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  // Use Google Docs viewer for cross-origin PDFs, direct embed for local
+  var isExternal = url.startsWith('http');
+  if (isExternal) {
+    frame.src = 'https://docs.google.com/gview?url=' + encodeURIComponent(url) + '&embedded=true';
+  } else {
+    frame.src = url;
+  }
+  frame.onload = function() { loading.style.display = 'none'; };
+  // Fallback timeout
+  setTimeout(function() { loading.style.display = 'none'; }, 5000);
+}
+
+function closePdfReader() {
+  var overlay = document.getElementById('pdfOverlay');
+  overlay.classList.remove('active');
+  document.getElementById('pdfFrame').src = '';
+  document.body.style.overflow = '';
+}
+
+// Close on Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closePdfReader();
+});
+
+// ========== ANALYTICS DATA ==========
+window.ANALYTICS_DATA = {
+  featured: {tag:"FEATURED RESEARCH",title:"GEOPOLITICS OF\nENERGY TRANSITION",description:"How global power dynamics, resource distribution, and policy strategies are being reshaped in a low-carbon world.",author:"IFSA Analytics",edition:"Special Edition",image:"images/featured-hero.png",pdf:"https://www.ifsahansraj.com/_files/ugd/d90c64_258d2842cfd24560ac0132ee3f73d0e9.pdf"},
+  articles: [
+    {icon:"🌍",tag:"SPECIAL EDITION",tagType:"",title:"Geopolitics of Energy Transition",meta:"By IFSA Analytics · Special Edition",badge:"FEATURED",image:"",pdf:"https://www.ifsahansraj.com/_files/ugd/d90c64_258d2842cfd24560ac0132ee3f73d0e9.pdf"},
+    {icon:"🇮🇳",tag:"SPECIAL EDITION",tagType:"",title:"India Next: Charting The Growth Story",meta:"By IFSA Analytics · Special Edition",badge:"",image:"",pdf:"https://www.ifsahansraj.com/_files/ugd/d90c64_906826fa138f4d17a8f2049a22256d02.pdf?index=true"},
+    {icon:"🏅",tag:"COLLABORATIVE · IIT KHARAGPUR",tagType:"collab",title:"The Economics of the Olympics",meta:"By IFSA Hansraj × IFSA IIT KGP",badge:"",image:"",pdf:"https://www.ifsahansraj.com/_files/ugd/d90c64_0808c8388bfa4f179c18949f5f70e815.pdf"},
+    {icon:"💸",tag:"COLLABORATIVE · SVC",tagType:"collab",title:"The Economics of Losing Money",meta:"By IFSA Hansraj × IFSA SVC",badge:"",image:"",pdf:"https://www.ifsahansraj.com/_files/ugd/d90c64_f27eb394c42a44aeb6140145c3512866.pdf"},
+    {icon:"🛡️",tag:"BLOG POST",tagType:"blog",title:"Impact of Tariff on Domestic Defence",meta:"Policy Analysis · 2025",badge:"",image:"",pdf:""},
+    {icon:"🎮",tag:"BLOG POST",tagType:"blog",title:"Fantasy Gaming in India: The Game Beyond the Game",meta:"Industry Analysis · 2025",badge:"",image:"",pdf:""},
+    {icon:"🏠",tag:"BLOG POST",tagType:"blog",title:"When Risk Rewrites the Map: Disasters & Property Markets",meta:"Macroeconomics · 2025",badge:"",image:"",pdf:""}
+  ]
+};
+
+window.renderAnalytics = function() {
+  if (!ANALYTICS_DATA) return;
+
+  // Featured article
+  var f = ANALYTICS_DATA.featured;
+  if (f) {
+    var ftTag = document.getElementById('ft_tag');
+    var ftTitle = document.getElementById('ft_title');
+    var ftDesc = document.getElementById('ft_desc');
+    var ftAuthor = document.getElementById('ft_author');
+    var ftEdition = document.getElementById('ft_edition');
+    var ftImage = document.getElementById('ft_image');
+    var ftRead = document.getElementById('ft_read');
+    if (ftTag) ftTag.textContent = f.tag || '';
+    if (ftTitle) ftTitle.innerHTML = (f.title || '').replace(/\n/g, '<br>');
+    if (ftDesc) ftDesc.textContent = f.description || '';
+    if (ftAuthor) ftAuthor.textContent = f.author || '';
+    if (ftEdition) ftEdition.textContent = f.edition || '';
+    if (ftImage && f.image) ftImage.src = f.image;
+    if (ftRead) {
+      ftRead.dataset.pdf = f.pdf || '';
+      ftRead.dataset.title = (f.title || '').replace(/\n/g, ' ');
+    }
+  }
+
+  // Research articles
+  var list = document.getElementById('researchList');
+  if (!list || !ANALYTICS_DATA.articles) return;
+  list.innerHTML = '';
+
+  ANALYTICS_DATA.articles.forEach(function(a) {
+    var item = document.createElement('div');
+    item.className = 'research-item';
+    item.style.cursor = a.pdf ? 'pointer' : 'default';
+    if (a.pdf) {
+      item.onclick = function() { openPdfReader(a.pdf, a.title); };
+    }
+
+    // Thumbnail: image or icon
+    var thumbHtml;
+    if (a.image) {
+      thumbHtml = '<img class="ri-thumb-img" src="' + a.image + '" alt="' + a.title + '">';
+    } else {
+      thumbHtml = '<div class="ri-thumb"><span>' + (a.icon || '📄') + '</span></div>';
+    }
+
+    // Tag class
+    var tagClass = 'ri-tag';
+    if (a.tagType === 'collab') tagClass += ' collab';
+    if (a.tagType === 'blog') tagClass += ' blog';
+
+    // Badge
+    var badgeHtml = '';
+    if (a.badge) badgeHtml = '<div class="ri-badge trending">' + a.badge + '</div>';
+
+    // PDF badge
+    var pdfBadge = '';
+    if (a.pdf) pdfBadge = '<span class="ri-pdf-badge">📄 READ PDF</span>';
+
+    item.innerHTML = thumbHtml +
+      '<div class="ri-body">' +
+        '<div class="' + tagClass + '">' + a.tag + '</div>' +
+        '<h4>' + a.title + pdfBadge + '</h4>' +
+        '<div class="ri-meta">' + a.meta + '</div>' +
+      '</div>' +
+      badgeHtml;
+
+    list.appendChild(item);
+  });
+}
+
+// Tab filtering
+document.querySelectorAll('.rtab').forEach(function(tab) {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.rtab').forEach(function(t) { t.classList.remove('active'); });
+    tab.classList.add('active');
+    var filter = tab.textContent.trim().toLowerCase();
+    var items = document.querySelectorAll('#researchList .research-item');
+    items.forEach(function(item) {
+      var tagEl = item.querySelector('.ri-tag');
+      if (!tagEl) return;
+      var tagText = tagEl.textContent.toLowerCase();
+      if (filter === 'all') { item.style.display = ''; return; }
+      if (filter === 'special editions' && tagText.includes('special')) { item.style.display = ''; return; }
+      if (filter === 'collaborative' && tagText.includes('collaborative')) { item.style.display = ''; return; }
+      if (filter === 'blog posts' && tagText.includes('blog')) { item.style.display = ''; return; }
+      item.style.display = 'none';
+    });
+  });
+});
+
+// Init
+renderAnalytics();
+</script>
+
+</body>
+</html>

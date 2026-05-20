@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: owner/ifsa-hansraj
+  repo: arindampaull2007-maker/ifsahansraj
   branch: main
 
 media_folder: "uploads/images"

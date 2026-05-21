@@ -14,6 +14,23 @@
       });
   }
 
+  // Re-observe fade-up elements after dynamic content is loaded
+  function reObserveFadeUps() {
+    setTimeout(function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up:not(.visible),.fade-in:not(.visible)').forEach(function(el) {
+        observer.observe(el);
+      });
+    }, 100);
+  }
+
   // Detect which page we're on
   var path = window.location.pathname;
   var isIndex = path === '/' || path.endsWith('index.html') || (!path.includes('.html') && !path.includes('/admin'));
@@ -57,6 +74,23 @@
           }
         });
       }
+
+      // Join IFSA link
+      if (data.joinLink) {
+        document.querySelectorAll('a[href="#join"], a[href$="#join"]').forEach(function(a) {
+          if (a.textContent.trim().toLowerCase().includes('join')) {
+            a.href = data.joinLink;
+            a.target = '_blank';
+            a.rel = 'noopener';
+          }
+        });
+      }
+
+      // Team hero image
+      if (data.teamHeroImage) {
+        var heroImgs = document.querySelectorAll('.team-hero-img');
+        heroImgs.forEach(function(img) { img.src = data.teamHeroImage; });
+      }
     }).catch(function () { });
 
     // Insights
@@ -87,9 +121,17 @@
     // Clients
     fetchJSON('content/clients.json').then(function (data) {
       if (data.items) {
-        var clientEls = document.querySelectorAll('.client-card span');
-        data.items.forEach(function (name, i) {
-          if (clientEls[i]) clientEls[i].textContent = name;
+        var grid = document.querySelector('.clients-grid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        data.items.forEach(function (client, i) {
+          var name = typeof client === 'string' ? client : client.name;
+          var logo = (typeof client === 'object' && client.logo) ? client.logo : '';
+          var stagger = (i % 8) + 1;
+          var card = '<div class="glass-card client-card fade-up stagger-' + stagger + '">';
+          if (logo) card += '<img src="' + logo + '" alt="' + name + '" class="client-logo">';
+          card += '<span>' + name + '</span></div>';
+          grid.innerHTML += card;
         });
       }
     }).catch(function () { });
@@ -126,6 +168,14 @@
 
   // ─── TEAM PAGE ───
   if (isTeam) {
+    // Team hero image from hero.json
+    fetchJSON('content/hero.json').then(function (data) {
+      if (data.teamHeroImage) {
+        var heroImgs = document.querySelectorAll('.team-hero-img');
+        heroImgs.forEach(function(img) { img.src = data.teamHeroImage; });
+      }
+    }).catch(function () { });
+
     fetchJSON('content/team.json').then(function (data) {
       if (!data.years) return;
       var container = document.getElementById('team-dynamic');
@@ -176,6 +226,7 @@
         html += '</div></div></section>';
         container.innerHTML += html;
       });
+      reObserveFadeUps();
     }).catch(function () { });
 
     // Convenors
@@ -186,11 +237,16 @@
       grid.innerHTML = '';
       data.items.forEach(function (c, i) {
         var stagger = (i % 8) + 1;
-        grid.innerHTML += '<div class="glass-card convenor-card fade-up stagger-' + stagger + '">' +
-          '<h3>' + c.name + '</h3>' +
-          '<div class="dept">' + c.department + '</div>' +
-          '</div>';
+        var html = '<div class="glass-card convenor-card fade-up stagger-' + stagger + '">';
+        if (c.photo) {
+          html += '<img class="convenor-photo" src="' + c.photo + '" alt="' + c.name + '">';
+        }
+        html += '<h3>' + c.name + '</h3>';
+        html += '<div class="dept">' + c.department + '</div>';
+        html += '</div>';
+        grid.innerHTML += html;
       });
+      reObserveFadeUps();
     }).catch(function () { });
   }
 
@@ -237,6 +293,7 @@
           container.innerHTML += html;
         });
       }
+      reObserveFadeUps();
     }).catch(function () { });
   }
 
@@ -253,7 +310,11 @@
         var html = '<div class="glass-card project-card fade-up">';
         html += '<div class="project-card-visual">';
         html += '<div class="project-number">' + num + '</div>';
-        html += '<span class="project-icon">' + proj.icon + '</span>';
+        if (proj.image) {
+          html += '<img class="project-logo" src="' + proj.image + '" alt="' + proj.name + '">';
+        } else {
+          html += '<span class="project-icon">' + proj.icon + '</span>';
+        }
         html += '</div>';
         html += '<div class="project-card-body">';
         html += '<div class="project-category">' + proj.category + '</div>';
@@ -271,6 +332,7 @@
         html += '</div></div>';
         grid.innerHTML += html;
       });
+      reObserveFadeUps();
     }).catch(function () { });
   }
 

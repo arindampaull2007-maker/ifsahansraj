@@ -29,6 +29,8 @@ collections:
             fields:
               - { label: "Number", name: "number", widget: "string" }
               - { label: "Label", name: "label", widget: "string" }
+          - { label: "Join IFSA Link", name: "joinLink", widget: "string", required: false, hint: "URL for the Join IFSA button (e.g. Google Form link)" }
+          - { label: "Team Hero Image", name: "teamHeroImage", widget: "image", required: false, hint: "Team group photo for homepage and team page" }
 
       - name: "insights"
         label: "Latest Insights"
@@ -69,10 +71,12 @@ collections:
         label: "Clients & Partners"
         file: "content/clients.json"
         fields:
-          - label: "Client Names"
+          - label: "Clients & Partners"
             name: "items"
             widget: "list"
-            field: { label: "Name", name: "name", widget: "string" }
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Logo Image", name: "logo", widget: "image", required: false, hint: "Company logo image" }
 
       - name: "fund"
         label: "Investment Fund"
@@ -138,6 +142,7 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Department", name: "department", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
 
   - name: "achievements"
     label: "Achievements"
@@ -181,6 +186,7 @@ collections:
               - { label: "Icon (emoji)", name: "icon", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
               - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Project Image", name: "image", widget: "image", required: false, hint: "Company logo or project image" }
               - { label: "Description (paragraph 1)", name: "desc1", widget: "text" }
               - { label: "Description (paragraph 2)", name: "desc2", widget: "text", required: false }
               - { label: "Description (paragraph 3)", name: "desc3", widget: "text", required: false }

@@ -1,3 +1,12 @@
 {
-  "items": ["Nykaa Fashion", "HPCL", "REC", "Decode Age", "CX Partners", "NSDL", "Crowwd", "FAAD Network"]
+  "items": [
+    { "name": "Nykaa Fashion", "logo": "images/logos/nykaa-fashion.png" },
+    { "name": "HPCL", "logo": "images/logos/hpcl.png" },
+    { "name": "REC", "logo": "images/logos/rec.png" },
+    { "name": "Decode Age", "logo": "images/logos/decode-age.png" },
+    { "name": "CX Partners", "logo": "images/logos/cx-partners.png" },
+    { "name": "NSDL", "logo": "images/logos/nsdl.png" },
+    { "name": "Crowwd", "logo": "images/logos/crowwd.png" },
+    { "name": "FAAD Network", "logo": "images/logos/faad-network.png" }
+  ]
 }

@@ -17,7 +17,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 30% 50%, rgba(139,37,0,0.12), transparent 60%),
+    radial-gradient(ellipse at 30% 50%, rgba(196,30,58,0.12), transparent 60%),
     radial-gradient(ellipse at 70% 50%, rgba(160,0,40,0.08), transparent 60%);
   z-index: 0;
 }
@@ -190,7 +190,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  background: rgba(139,37,0,0.12);
+  background: rgba(196,30,58,0.12);
   color: var(--gold);
   margin-bottom: 20px;
 }
@@ -215,12 +215,12 @@
   font-weight: 600;
   color: var(--gold);
   padding: 10px 24px;
-  border: 1px solid rgba(139,37,0,0.3);
+  border: 1px solid rgba(196,30,58,0.3);
   border-radius: 8px;
   transition: all 0.4s;
 }
 .report-link:hover {
-  background: rgba(139,37,0,0.1);
+  background: rgba(196,30,58,0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
@@ -243,7 +243,7 @@
   color: var(--gold);
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(139,37,0,0.15);
+  border-bottom: 1px solid rgba(196,30,58,0.15);
 }
 .collab-card h3 {
   font-size: 1.05rem;
@@ -272,7 +272,7 @@
 }
 .blog-card-img {
   height: 180px;
-  background: linear-gradient(135deg, rgba(139,37,0,0.15), rgba(30,30,30,0.8));
+  background: linear-gradient(135deg, rgba(196,30,58,0.15), rgba(30,30,30,0.8));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +415,7 @@
 .convenor-card {
   padding: 36px 24px;
   text-align: center;
-  border: 1px solid rgba(139,37,0,0.15);
+  border: 1px solid rgba(196,30,58,0.15);
 }
 .convenor-card h3 {
   font-size: 1rem;
@@ -427,6 +427,22 @@
   font-size: 0.78rem;
   color: var(--dark-400);
 }
+.convenor-photo {
+  width: 80px; height: 80px; border-radius: 50%; object-fit: cover;
+  margin-bottom: 16px; border: 2px solid rgba(196,30,58,0.3);
+}
+.project-logo {
+  width: 48px; height: 48px; object-fit: contain; border-radius: 8px;
+}
+.footer-social {
+  display: flex; gap: 16px; margin-top: 8px;
+}
+.footer-social a {
+  color: var(--dark-400); transition: color 0.3s;
+}
+.footer-social a:hover {
+  color: var(--gold);
+}
 
 /* ========== ACHIEVEMENT CARDS ========== */
 .achievements-section-title {
@@ -437,7 +453,7 @@
   color: var(--gold);
   margin-bottom: 32px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(139,37,0,0.15);
+  border-bottom: 1px solid rgba(196,30,58,0.15);
 }
 .achievements-grid {
   display: grid;
@@ -456,7 +472,7 @@
   left: 20px;
   right: 20px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(139,37,0,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(196,30,58,0.2), transparent);
 }
 .achievement-card h4 {
   font-size: 0.92rem;
@@ -478,8 +494,8 @@
   line-height: 1.5;
 }
 .achievement-highlight {
-  border: 1px solid rgba(139,37,0,0.25) !important;
-  background: rgba(139,37,0,0.04) !important;
+  border: 1px solid rgba(196,30,58,0.25) !important;
+  background: rgba(196,30,58,0.04) !important;
 }
 .achievement-highlight::before {
   background: linear-gradient(90deg, var(--gold), var(--gold-dark)) !important;
@@ -493,7 +509,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: rgba(139,37,0,0.15);
+  background: rgba(196,30,58,0.15);
   color: var(--gold);
   margin-bottom: 12px;
 }
@@ -528,7 +544,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(139,37,0,0.15), rgba(20,20,20,0.95));
+  background: linear-gradient(135deg, rgba(196,30,58,0.15), rgba(20,20,20,0.95));
 }
 .project-card-visual::after {
   content: '';
@@ -580,8 +596,8 @@
   border-radius: 6px;
   font-size: 0.72rem;
   font-weight: 600;
-  background: rgba(139,37,0,0.08);
-  border: 1px solid rgba(139,37,0,0.15);
+  background: rgba(196,30,58,0.08);
+  border: 1px solid rgba(196,30,58,0.15);
   color: var(--dark-200);
 }
 .project-number {
@@ -594,7 +610,7 @@
   font-size: 0.85rem;
   font-weight: 800;
   color: var(--gold);
-  border: 2px solid rgba(139,37,0,0.3);
+  border: 2px solid rgba(196,30,58,0.3);
   position: absolute;
   top: 20px;
   left: 20px;

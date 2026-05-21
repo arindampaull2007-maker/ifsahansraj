@@ -1,9 +1,9 @@
 {
   "items": [
-    { "icon": "📊", "title": "Research & Analytics", "description": "Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives used by 1200+ students and professionals." },
-    { "icon": "🏢", "title": "Live Consulting Projects", "description": "Partnering with corporates like Nykaa, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements." },
-    { "icon": "🏆", "title": "Competitions", "description": "50+ national and international competition wins including CFA Research Challenge, Hult Prize, and Goldman Sachs Case Comp." },
-    { "icon": "💹", "title": "Investment Fund", "description": "Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets." },
-    { "icon": "🌍", "title": "Global Exposure", "description": "Part of the International Finance Student Association network spanning 50+ countries with cross-border research collaborations." }
+    { "icon": "📊", "title": "Research & Analytics", "description": "Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives followed by 1200+ finance enthusiasts.", "stats": [{"num":"40+","label":"Reports Published"},{"num":"1200+","label":"Monthly Readers"},{"num":"10+","label":"Sectors Covered"}], "link": "analytics.html", "linkText": "View Publications →" },
+    { "icon": "🏢", "title": "Live Consulting Projects", "description": "Partnering with corporates like Nykaa Fashion, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements.", "stats": [], "link": "projects.html", "linkText": "View Projects →" },
+    { "icon": "🏆", "title": "Competitions", "description": "Representing IFSA across 50+ national and international competitions with a legacy of excellence.", "stats": [], "link": "achievements.html", "linkText": "" },
+    { "icon": "💹", "title": "Investment Fund", "description": "Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets.", "stats": [], "link": "#fund", "linkText": "" },
+    { "icon": "🌍", "title": "Global Exposure", "description": "Part of the International Finance Student Association network spanning 50+ countries with cross-border research collaborations.", "stats": [], "link": "about.html", "linkText": "" }
   ]
 }

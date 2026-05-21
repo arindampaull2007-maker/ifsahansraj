@@ -18,7 +18,7 @@
     </a>
     <div class="nav-links">
       <a href="#hero">Home</a>
-      <a href="#about">About Us</a>
+      <a href="about.html">About Us</a>
       <a href="team.html">Our Team</a>
       <a href="analytics.html">Analytics</a>
       <a href="projects.html">Projects</a>
@@ -36,7 +36,7 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#hero" onclick="closeMobile()">Home</a>
-  <a href="#about" onclick="closeMobile()">About Us</a>
+  <a href="about.html" onclick="closeMobile()">About Us</a>
   <a href="team.html">Our Team</a>
   <a href="analytics.html">IFSA Analytics</a>
   <a href="projects.html">Projects</a>
@@ -148,44 +148,97 @@
   </div>
 </section>
 
-<!-- ========== WHAT WE DO ========== -->
+<!-- ========== WHAT WE DO (Bento Grid) ========== -->
 <section class="section-padding" id="whatwedo" style="background: var(--dark-900);">
   <div class="container">
-    <div class="fade-up" style="text-align:center; margin-bottom: 12px;">
-      <div class="section-label" style="justify-content:center;">Our Verticals</div>
-      <h2 class="section-title">What We <span class="gold-text">Do</span></h2>
-      <p class="section-subtitle" style="margin: 0 auto;">Five verticals. One mission.</p>
+    <div class="fade-up" style="margin-bottom: 12px;">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Building Finance Leaders.<br><span class="gold-text">Creating Real Impact.</span></h2>
+      <p class="section-subtitle">From institutional-grade research to live projects and global collaborations, we empower students to solve real-world problems in finance and beyond.</p>
     </div>
-    <div class="wwd-grid">
-      <div class="glass-card wwd-card fade-up stagger-1">
-        <div class="wwd-icon">📊</div>
-        <h3>Research &amp; Analytics</h3>
-        <p>Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives used by 1200+ students and professionals.</p>
-
+    <div class="bento-grid">
+      <!-- 01 Research & Analytics (large) -->
+      <div class="glass-card bento-card bento-large fade-up stagger-1">
+        <div class="bento-header">
+          <div class="bento-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M21 12V7H5a2 2 0 010-4h14v4"/><path d="M3 5v14a2 2 0 002 2h16v-5"/><path d="M18 12a2 2 0 100 4 2 2 0 000-4z"/></svg></div>
+          <span class="bento-num">01</span>
+        </div>
+        <h3>Research & Analytics</h3>
+        <p>Publishing institutional-grade equity research, macroeconomic analyses, and sector deep-dives followed by 1200+ finance enthusiasts.</p>
+        <div class="bento-mini-stats">
+          <div class="bento-mini-stat"><span class="bms-num">40+</span><span class="bms-label">Reports Published</span></div>
+          <div class="bento-mini-stat"><span class="bms-num">1200+</span><span class="bms-label">Monthly Readers</span></div>
+          <div class="bento-mini-stat"><span class="bms-num">10+</span><span class="bms-label">Sectors Covered</span></div>
+        </div>
+        <a href="analytics.html" class="bento-link">View Publications →</a>
       </div>
-      <div class="glass-card wwd-card fade-up stagger-2">
-        <div class="wwd-icon">🏢</div>
-        <h3>Live Consulting Projects</h3>
-        <p>Partnering with corporates like Nykaa, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements.</p>
 
-      </div>
-      <div class="glass-card wwd-card fade-up stagger-3">
-        <div class="wwd-icon">🏆</div>
+      <!-- 02 Competitions -->
+      <div class="glass-card bento-card fade-up stagger-2">
+        <div class="bento-header">
+          <div class="bento-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 010-5H6"/><path d="M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 1012 0V2z"/></svg></div>
+          <span class="bento-num">03</span>
+        </div>
         <h3>Competitions</h3>
-        <p>50+ national and international competition wins including CFA Research Challenge, Hult Prize, and Goldman Sachs Case Comp.</p>
-
+        <p>Representing IFSA across 50+ national and international competitions with a legacy of excellence.</p>
+        <div class="bento-partner-logos">
+          <span class="bento-partner">CFA Institute Challenge</span>
+          <span class="bento-partner">Hult Prize</span>
+          <span class="bento-partner">Goldman Sachs</span>
+        </div>
       </div>
-      <div class="glass-card wwd-card fade-up stagger-4">
-        <div class="wwd-icon">💹</div>
-        <h3>Investment Fund</h3>
-        <p>Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets.</p>
 
-      </div>
-      <div class="glass-card wwd-card fade-up stagger-5">
-        <div class="wwd-icon">🌍</div>
+      <!-- 03 Global Exposure -->
+      <div class="glass-card bento-card fade-up stagger-3">
+        <div class="bento-header">
+          <div class="bento-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <span class="bento-num">05</span>
+        </div>
         <h3>Global Exposure</h3>
         <p>Part of the International Finance Student Association network spanning 50+ countries with cross-border research collaborations.</p>
+      </div>
 
+      <!-- 04 Live Consulting -->
+      <div class="glass-card bento-card fade-up stagger-4">
+        <div class="bento-header">
+          <div class="bento-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <span class="bento-num">02</span>
+        </div>
+        <h3>Live Consulting Projects</h3>
+        <p>Partnering with corporates like Nykaa Fashion, HPCL, and REC on real-world strategy, market entry, and financial modeling engagements.</p>
+        <div class="bento-partner-logos">
+          <span class="bento-partner">Nykaa Fashion</span>
+          <span class="bento-partner">HPCL</span>
+          <span class="bento-partner">REC</span>
+        </div>
+        <a href="projects.html" class="bento-link">View Projects →</a>
+      </div>
+
+      <!-- 05 Investment Fund -->
+      <div class="glass-card bento-card fade-up stagger-5">
+        <div class="bento-header">
+          <div class="bento-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+          <span class="bento-num">04</span>
+        </div>
+        <h3>Investment Fund</h3>
+        <p>Managing a student-run investment fund with a diversified portfolio spanning equities, fixed income, and alternative assets.</p>
+        <div class="bento-fund-preview">
+          <span class="bfp-label">IFSA Fund Performance</span>
+          <span class="bfp-value green">+18.7%</span>
+          <span class="bfp-sub">YTD Return</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bento-cta fade-up">
+      <div class="bento-cta-inner glass-card">
+        <div class="bento-cta-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></div>
+        <div class="bento-cta-text">
+          <h3>More than a society. <span class="gold-text">A launchpad for leaders.</span></h3>
+          <p>Join a community that learns, builds, competes, and creates impact.</p>
+        </div>
+        <a href="#join" class="btn-outline"><span>Join IFSA Today →</span></a>
       </div>
     </div>
   </div>
@@ -200,14 +253,14 @@
       <p class="section-subtitle" style="margin:0 auto;">8+ live consulting engagements with India's top corporations.</p>
     </div>
     <div class="clients-grid">
-      <div class="glass-card client-card fade-up stagger-1"><span>Nykaa</span></div>
+      <div class="glass-card client-card fade-up stagger-1"><span>Nykaa Fashion</span></div>
       <div class="glass-card client-card fade-up stagger-2"><span>HPCL</span></div>
       <div class="glass-card client-card fade-up stagger-3"><span>REC</span></div>
       <div class="glass-card client-card fade-up stagger-4"><span>Decode Age</span></div>
       <div class="glass-card client-card fade-up stagger-5"><span>CX Partners</span></div>
       <div class="glass-card client-card fade-up stagger-6"><span>NSDL</span></div>
       <div class="glass-card client-card fade-up stagger-7"><span>Crowwd</span></div>
-      <div class="glass-card client-card fade-up stagger-8"><span>Phaad Network</span></div>
+      <div class="glass-card client-card fade-up stagger-8"><span>FAAD Network</span></div>
     </div>
   </div>
 </section>
@@ -291,10 +344,9 @@
         <p>India's most ambitious undergraduate finance society.</p>
         <div class="footer-proof">1,200+ Members · 50+ Wins · 100+ Papers · 30+ Projects</div>
         <div class="footer-social">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Email">✉</a>
+          <a href="https://www.linkedin.com/company/ifsa-network-hansraj-college/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.instagram.com/ifsa.hansraj/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="mailto:hansraj@ifsa-network.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg></a>
         </div>
       </div>
       <div class="footer-col">

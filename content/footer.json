@@ -1,4 +1,9 @@
 {
   "brand": "India's most ambitious undergraduate finance society.",
-  "proof": "1,200+ Members · 50+ Wins · 100+ Papers · 30+ Projects"
+  "proof": "1,200+ Members · 50+ Wins · 100+ Papers · 30+ Projects",
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/ifsa-network-hansraj-college/",
+    "instagram": "https://www.instagram.com/ifsa.hansraj/",
+    "email": "hansraj@ifsa-network.com"
+  }
 }

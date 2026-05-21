@@ -21,6 +21,7 @@
   var isAchievements = path.includes('achievements');
   var isProjects = path.includes('projects');
   var isAnalytics = path.includes('analytics');
+  var isAbout = path.includes('about');
 
   // Don't run on admin page
   if (path.includes('/admin')) return;
@@ -80,22 +81,8 @@
       }
     }).catch(function () { });
 
-    // Verticals
-    fetchJSON('content/verticals.json').then(function (data) {
-      if (data.items) {
-        var wwdEls = document.querySelectorAll('.wwd-card');
-        data.items.forEach(function (card, i) {
-          if (wwdEls[i]) {
-            var icon = wwdEls[i].querySelector('.wwd-icon');
-            var h3 = wwdEls[i].querySelector('h3');
-            var p = wwdEls[i].querySelector('p');
-            if (icon) icon.textContent = card.icon;
-            if (h3) h3.textContent = card.title;
-            if (p) p.textContent = card.description;
-          }
-        });
-      }
-    }).catch(function () { });
+    // Verticals — bento grid is static HTML, no dynamic injection needed
+    // (CMS edits verticals.json directly)
 
     // Clients
     fetchJSON('content/clients.json').then(function (data) {
@@ -178,6 +165,9 @@
             }
             html += '<h3>' + m.name + '</h3>';
             html += '<div class="team-member-role">' + m.role + '</div>';
+            if (m.linkedin) {
+              html += '<a href="' + m.linkedin + '" target="_blank" rel="noopener" class="team-linkedin" title="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>';
+            }
             html += '</div>';
           });
           html += '</div>';
@@ -292,6 +282,35 @@
         window.ANALYTICS_DATA = data;
         if (typeof window.renderAnalytics === 'function') {
           window.renderAnalytics();
+        }
+      }
+    }).catch(function () { });
+  }
+
+  // ─── ABOUT PAGE ───
+  if (isAbout) {
+    fetchJSON('content/about.json').then(function (data) {
+      if (data.hansraj) {
+        var hTitle = document.getElementById('about-hansraj-title');
+        var hText = document.getElementById('about-hansraj-text');
+        if (hTitle) hTitle.textContent = data.hansraj.title;
+        if (hText) hText.textContent = data.hansraj.description;
+      }
+      if (data.network) {
+        var nTitle = document.getElementById('about-network-title');
+        var nText = document.getElementById('about-network-text');
+        if (nTitle) nTitle.textContent = data.network.title;
+        if (nText) nText.textContent = data.network.description;
+      }
+      if (data.stats) {
+        var statsEl = document.getElementById('about-stats');
+        if (statsEl) {
+          statsEl.innerHTML = '';
+          data.stats.forEach(function (s) {
+            statsEl.innerHTML += '<div class="about-stat glass-card">' +
+              '<div class="num">' + s.num + '</div>' +
+              '<div class="label">' + s.label + '</div></div>';
+          });
         }
       }
     }).catch(function () { });

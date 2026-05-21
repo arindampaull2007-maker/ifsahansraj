@@ -1,0 +1,16 @@
+{
+  "hansraj": {
+    "title": "About IFSA Hansraj",
+    "description": "IFSA is committed towards bringing Personal Growth, Network Expansion, and International Opportunities to its members through workshops, presentations, and challenges. IFSA Network Hansraj consists of some of the most talented and hardworking students of the college with great experience in the space of Business, Finance, and Strategy Competitions in association with various organizations like KPMG, Flipkart, World Bank, World Asian Case Study, etc. Under navigational guidance from our mentor board, we are committed to making IFSA Hansraj a great learning platform."
+  },
+  "network": {
+    "title": "About IFSA Network",
+    "description": "The IFSA Network is the world's largest finance student-run organization connecting the planet's most prestigious universities and finance actors worldwide. The Global Case Competition at Harvard (GCCH), one of the most prestigious case competitions in the world, is the international flagship event of IFSA Network. IFSA established itself in thirteen countries throughout five continents and has more than 30,000 members. Our vision is to sustain the largest yet very exclusive, network of students who are passionate about finance and to become their reference in the field. Our mission is to provide students with a great amount of practical & theoretical knowledge, putting them in contact with financial entities as well as helping them build their network. Ever since its establishment in Rotterdam, the goal of IFSA has been to connect students from the best universities in the world."
+  },
+  "stats": [
+    { "num": "30,000+", "label": "Global Members" },
+    { "num": "13", "label": "Countries" },
+    { "num": "5", "label": "Continents" },
+    { "num": "50+", "label": "Universities" }
+  ]
+}

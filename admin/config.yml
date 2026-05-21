@@ -55,6 +55,15 @@ collections:
               - { label: "Icon (emoji)", name: "icon", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - label: "Mini Stats"
+                name: "stats"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Number", name: "num", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link URL", name: "link", widget: "string", required: false }
+              - { label: "Link Text", name: "linkText", widget: "string", required: false }
 
       - name: "clients"
         label: "Clients & Partners"
@@ -84,6 +93,13 @@ collections:
         fields:
           - { label: "Brand Description", name: "brand", widget: "string" }
           - { label: "Proof Strip", name: "proof", widget: "string" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+              - { label: "Instagram URL", name: "instagram", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
 
   - name: "team"
     label: "Team"
@@ -109,6 +125,7 @@ collections:
                     fields:
                       - { label: "Name", name: "name", widget: "string" }
                       - { label: "Role", name: "role", widget: "string" }
+                      - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
                       - { label: "Photo", name: "photo", widget: "image", required: false }
 
       - name: "convenors"
@@ -202,3 +219,29 @@ collections:
               - { label: "Badge (e.g. FEATURED)", name: "badge", widget: "string", required: false }
               - { label: "Thumbnail Image", name: "image", widget: "image", required: false }
               - { label: "PDF URL/Path", name: "pdf", widget: "string", required: false }
+
+  - name: "about"
+    label: "About Us"
+    files:
+      - name: "about_data"
+        label: "About Page Content"
+        file: "content/about.json"
+        fields:
+          - label: "IFSA Hansraj"
+            name: "hansraj"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "IFSA Network"
+            name: "network"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }

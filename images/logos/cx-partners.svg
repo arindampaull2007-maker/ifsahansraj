@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
+  <text x="4" y="40" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900" fill="#4A4A4A" letter-spacing="1">CX</text>
+  <text x="62" y="40" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#7A7A7A" letter-spacing="1">partners</text>
+  <g transform="translate(195, 10)">
+    <polygon points="20,0 40,20 20,40 0,20" fill="none" stroke="#4ABFBF" stroke-width="2.5"/>
+    <polygon points="20,8 32,20 20,32 8,20" fill="#4ABFBF" opacity="0.3"/>
+  </g>
+</svg>

@@ -458,7 +458,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   min-height: 120px;
 }
 .client-logo {
-  width: 80px; height: 80px; object-fit: contain;
+  width: 56px; height: 56px; object-fit: contain;
   filter: grayscale(100%) brightness(0.8); opacity: 0.7;
   transition: all 0.4s;
 }

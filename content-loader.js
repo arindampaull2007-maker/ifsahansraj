@@ -14,21 +14,13 @@
       });
   }
 
-  // Re-observe fade-up elements after dynamic content is loaded
+  // Make dynamically rendered fade-up elements visible
   function reObserveFadeUps() {
     setTimeout(function() {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            observer.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.1 });
       document.querySelectorAll('.fade-up:not(.visible),.fade-in:not(.visible)').forEach(function(el) {
-        observer.observe(el);
+        el.classList.add('visible');
       });
-    }, 100);
+    }, 50);
   }
 
   // Detect which page we're on

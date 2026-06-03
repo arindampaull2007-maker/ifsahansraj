@@ -120,7 +120,7 @@
           var name = typeof client === 'string' ? client : client.name;
           var logo = (typeof client === 'object' && client.logo) ? client.logo : '';
           var stagger = (i % 8) + 1;
-          var card = '<div class="glass-card client-card fade-up stagger-' + stagger + '">';
+          var card = '<div class="glass-card client-card fade-up visible stagger-' + stagger + '">';
           if (logo) card += '<img src="' + logo + '" alt="' + name + '" class="client-logo">';
           card += '<span>' + name + '</span></div>';
           grid.innerHTML += card;

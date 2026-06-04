@@ -110,23 +110,8 @@
     // Verticals — bento grid is static HTML, no dynamic injection needed
     // (CMS edits verticals.json directly)
 
-    // Clients
-    fetchJSON('content/clients.json').then(function (data) {
-      if (data.items) {
-        var grid = document.querySelector('.clients-grid');
-        if (!grid) return;
-        grid.innerHTML = '';
-        data.items.forEach(function (client, i) {
-          var name = typeof client === 'string' ? client : client.name;
-          var logo = (typeof client === 'object' && client.logo) ? client.logo : '';
-          var stagger = (i % 8) + 1;
-          var card = '<div class="glass-card client-card fade-up visible stagger-' + stagger + '">';
-          if (logo) card += '<img src="' + logo + '" alt="' + name + '" class="client-logo">';
-          card += '<span>' + name + '</span></div>';
-          grid.innerHTML += card;
-        });
-      }
-    }).catch(function () { });
+    // Clients — uses hardcoded HTML (no dynamic rebuild needed)
+    // Logo images and names are maintained directly in index.html
 
     // Fund
     fetchJSON('content/fund.json').then(function (data) {

@@ -7,19 +7,19 @@
         {
           "name": "Core Committee",
           "members": [
-            { "name": "Aaditya Kothari", "role": "President" },
-            { "name": "Arnav Sachdeva", "role": "Vice President" },
-            { "name": "Vanshika Soni", "role": "Vice President" },
-            { "name": "Jiya Wadhwa", "role": "General Secretary" }
+            { "name": "Aaditya Kothari", "role": "President", "photo": "images/team/aaditya-kothari.jpg" },
+            { "name": "Arnav Sachdeva", "role": "Vice President", "photo": "images/team/arnav-sachdeva.jpg" },
+            { "name": "Vanshika Soni", "role": "Vice President", "photo": "images/team/vanshika-soni.jpg" },
+            { "name": "Jiya Wadhwa", "role": "General Secretary", "photo": "images/team/jiya-wadhwa.jpg" }
           ]
         },
         {
           "name": "Executive Board",
           "members": [
-            { "name": "Ansh Batra", "role": "Executive Board" },
-            { "name": "Bhavi Khanna", "role": "Executive Board" },
-            { "name": "Khushi Satwani", "role": "Executive Board" },
-            { "name": "Navya Gupta", "role": "Executive Board" }
+            { "name": "Ansh Batra", "role": "Executive Board", "photo": "images/team/ansh-batra.jpg" },
+            { "name": "Bhavi Khanna", "role": "Executive Board", "photo": "images/team/bhavi-khanna.jpg" },
+            { "name": "Khushi Satwani", "role": "Executive Board", "photo": "images/team/khushi-satwani.jpg" },
+            { "name": "Navya Gupta", "role": "Executive Board", "photo": "images/team/navya-gupta.jpg" }
           ]
         }
       ]
@@ -31,17 +31,17 @@
         {
           "name": "Core Committee",
           "members": [
-            { "name": "Saksham Bansal", "role": "President" },
-            { "name": "Aryan Kumar", "role": "Vice President" },
-            { "name": "Ayush Jain", "role": "Vice President" }
+            { "name": "Saksham Bansal", "role": "President", "photo": "images/team/saksham-bansal.jpg" },
+            { "name": "Aryan Kumar", "role": "Vice President", "photo": "images/team/aryan-kumar.jpg" },
+            { "name": "Ayush Jain", "role": "Vice President", "photo": "images/team/ayush-jain.jpg" }
           ]
         },
         {
           "name": "Executive Board",
           "members": [
-            { "name": "Soham Swami", "role": "Executive Board" },
-            { "name": "Mahi Rawat", "role": "Executive Board" },
-            { "name": "Daksh Ahuja", "role": "Executive Board" }
+            { "name": "Soham Swami", "role": "Executive Board", "photo": "images/team/soham-swami.jpg" },
+            { "name": "Mahi Rawat", "role": "Executive Board", "photo": "images/team/mahi-rawat.jpg" },
+            { "name": "Daksh Ahuja", "role": "Executive Board", "photo": "images/team/daksh-ahuja.jpg" }
           ]
         }
       ]
@@ -53,12 +53,12 @@
         {
           "name": "Leadership",
           "members": [
-            { "name": "Krishna Golyan", "role": "President" },
-            { "name": "Nysna Khurana", "role": "Vice President" },
-            { "name": "Ayush Jain", "role": "Director of Finance" },
-            { "name": "Mahi Rawat", "role": "Director of Outreach" },
-            { "name": "Saksham Bansal", "role": "Director of Consulting" },
-            { "name": "Suhani Jain", "role": "Director of Operations" }
+            { "name": "Krishna Golyan", "role": "President", "photo": "images/team/krishna-golyan.jpg" },
+            { "name": "Nysna Khurana", "role": "Vice President", "photo": "images/team/nysna-khurana.jpg" },
+            { "name": "Ayush Jain", "role": "Director of Finance", "photo": "images/team/ayush-jain.jpg" },
+            { "name": "Mahi Rawat", "role": "Director of Outreach", "photo": "images/team/mahi-rawat.jpg" },
+            { "name": "Saksham Bansal", "role": "Director of Consulting", "photo": "images/team/saksham-bansal.jpg" },
+            { "name": "Suhani Jain", "role": "Director of Operations", "photo": "images/team/suhani-jain.jpg" }
           ]
         }
       ]
@@ -70,11 +70,11 @@
         {
           "name": "Leadership",
           "members": [
-            { "name": "Satyam Agarwalla", "role": "President" },
-            { "name": "Simran Swain", "role": "Vice-President" },
-            { "name": "Pranjal Aggarwal", "role": "Dir. of Economics & Finance" },
-            { "name": "Mahir Bhandari", "role": "Director of Operations" },
-            { "name": "Sharvi Sharma", "role": "Director of Outreach" }
+            { "name": "Satyam Agarwalla", "role": "President", "photo": "images/team/satyam-agarwalla.jpg" },
+            { "name": "Simran Swain", "role": "Vice-President", "photo": "images/team/simran-swain.jpg" },
+            { "name": "Pranjal Aggarwal", "role": "Dir. of Economics & Finance", "photo": "images/team/pranjal-aggarwal.jpg" },
+            { "name": "Mahir Bhandari", "role": "Director of Operations", "photo": "images/team/mahir-bhandari.jpg" },
+            { "name": "Sharvi Sharma", "role": "Director of Outreach", "photo": "images/team/sharvi-sharma.jpg" }
           ]
         }
       ]
@@ -86,11 +86,11 @@
         {
           "name": "Leadership",
           "members": [
-            { "name": "Aakash Kataria", "role": "President" },
-            { "name": "Svasti Pant", "role": "Vice-President" },
-            { "name": "Shrusti Singh", "role": "Dir. of Econ. & Statistics" },
-            { "name": "Aditya Vikram Singh", "role": "Director of Finance" },
-            { "name": "Shivansh Chawla", "role": "Director of Outreach" }
+            { "name": "Aakash Kataria", "role": "President", "photo": "images/team/aakash-kataria.jpg" },
+            { "name": "Svasti Pant", "role": "Vice-President", "photo": "images/team/svasti-pant.jpg" },
+            { "name": "Shrusti Singh", "role": "Dir. of Econ. & Statistics", "photo": "images/team/shrusti-singh.jpg" },
+            { "name": "Aditya Vikram Singh", "role": "Director of Finance", "photo": "images/team/aditya-vikram-singh.jpg" },
+            { "name": "Shivansh Chawla", "role": "Director of Outreach", "photo": "images/team/shivansh-chawla.jpg" }
           ]
         }
       ]
@@ -102,11 +102,11 @@
         {
           "name": "Founding Board",
           "members": [
-            { "name": "Sandesh Dholakia", "role": "President" },
-            { "name": "Govind Gupta", "role": "Vice-President" },
-            { "name": "Ishan Kashyap Hazarika", "role": "Dir. of Econ. & Statistics" },
-            { "name": "Dhruv Tuli", "role": "Director of Finance" },
-            { "name": "Rahul Nandwani", "role": "Director of Outreach" }
+            { "name": "Sandesh Dholakia", "role": "President", "photo": "images/team/sandesh-dholakia.jpg" },
+            { "name": "Govind Gupta", "role": "Vice-President", "photo": "images/team/govind-gupta.jpg" },
+            { "name": "Ishan Kashyap Hazarika", "role": "Dir. of Econ. & Statistics", "photo": "images/team/ishan-kashyap-hazarika.jpg" },
+            { "name": "Dhruv Tuli", "role": "Director of Finance", "photo": "images/team/dhruv-tuli.jpg" },
+            { "name": "Rahul Nandwani", "role": "Director of Outreach", "photo": "images/team/rahul-nandwani.jpg" }
           ]
         }
       ]
